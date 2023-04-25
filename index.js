@@ -1,4 +1,4 @@
-const entrada = require('prompt-sync')();
+const entrada = require('prompt-sync')(); 
 
 console.log('Hello world!');
 
@@ -6,10 +6,11 @@ let nome = entrada('Digite seu nome: ');
 
 console.log('Olá ' + nome); 
 
-let idadeTxt = entrada(nome + ' quantos anos você tem?');
+let idadeTxt = entrada(nome + ' quantos anos você tem? ');
 let idade = parseInt(idadeTxt);
 
 let resposta = 'n';
+
 if (idade < 15) {
     resposta = entrada('Acredito que você esteja no ensino fundamental. \nEstou certo? (responda s/n)');
 } else if (idade > 15 && idade < 18) {
